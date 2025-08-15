@@ -1,0 +1,42 @@
+h1{
+    color: rgb(8, 9, 9);
+    background-color: blue;
+}
+
+#one {
+    background-origin: padding-box;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: rebeccapurple;
+
+
+}
+#list{
+    border: 10px ;
+    height: 100px;
+    background-color: red;
+}
+
+.cl1{
+    border: 100ppx;
+    background-color: blue;
+    border-radius: 100px;
+    height: 20px;
+}
+.two {
+    background-origin: padding-box;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: rebeccapurple;
+
+
+}
+
+#btn{
+    visibility: hidden;
+    color: brown;
+    background-color: aquamarine;
+
+}
