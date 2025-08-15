@@ -46,7 +46,3 @@ for(const [key] in list){
   console.log(`${key} == ${list[key]}`)
 }
 
-//using for in loop
-// for(const key in list){
-//   console.log(`${key} == ${list[key]}`)
-// }
