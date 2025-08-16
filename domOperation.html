@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class = 'Lang'>
+    <li>JavaScript</li>
+    <li>MongoDB</li>
+  </ul>
+
+  <script>
+
+    //adding element using funtion
+
+    //it traverse first to last element
+   function addele(newname){
+     const n1 = document.createElement('li')
+    n1.innerHTML = `${newname}`
+    document.querySelector('.Lang').appendChild(n1)
+   }
+   addele('PHP');
+   addele('Java');
+
+
+
+   //it adds the list directly to end
+   function addeleopt(newname){
+    const n1 = document.createElement('li')
+    n1.appendChild(document.createTextNode(newname))
+    document.querySelector('.Lang').appendChild(n1)
+    
+   }
+   addeleopt('Python')
+   addeleopt('Mysql')
+
+
+   //edit or repalce
+   const newlang = document.querySelectorAll('li')
+   console.log(newlang)
+   const new1 = newlang[1];
+    // new1.innerHTML = 'Mojo'
+   console.log(new1)
+   const ele1 = document.createElement('li');
+   ele1.textContent = 'Mojo'
+   new1.replaceWith(ele1)
+
+   // 2nd option of edit
+   const firstlang = document.querySelector('li:first-child')
+   firstlang.outerHTML = '<li>Typescript</li>'
+
+
+   //remove or delete element
+
+   const lastele = document.querySelector('li:last-child')
+   lastele.remove();
+  
+  </script>
+  
+</body>
+</html>
