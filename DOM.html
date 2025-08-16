@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="parent">
+    <div class="num">One</div>
+    <div class="num">Two</div>
+    <div class="num">Three</div>
+  </div>
+  <script>
+    const li = document.querySelector('.parent');
+    console.log(li);
+    //acessing children element
+    console.log(li.children);
+    console.log(li.children[1].innerHTML);
+
+
+    // accessing element by loop
+    for( let i = 0; i< li.children.length; i++){
+      console.log(li.children[i].innerHTML)
+    }
+
+    li.children[1].style.color = 'red'
+
+    //display all nodes with spaces and comments
+    console.log('Nodes : ', li.childNodes);
+    
+    // accessing first and last element
+    console.log(li.firstElementChild);
+     console.log(li.lastElementChild);
+
+
+     const on1 = document.querySelector('.num');
+     console.log(on1);
+
+     // accessing parent element using children
+     console.log(on1.parentElement);
+     // accessing same value element (brother)
+     console.log(on1.nextElementSibling);
+     console.log(on1.nextElementSibling.innerHTML);
+
+
+     
+
+  </script>
+  
+</body>
+</html>
