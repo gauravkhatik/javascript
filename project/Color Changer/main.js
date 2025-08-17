@@ -2,7 +2,7 @@ const bt = document.querySelectorAll('.button')
 const body = document.querySelector('body')
 
 bt.forEach(function(ele){
-  console.log(ele);
+ // console.log(ele);
   ele.addEventListener('click',function(e){
     console.log(e);
     console.log(e.target);
